@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  openNav(){
+  document.getElementById('sideNavBar').style.width ="45vw"
+}
+closeNav(){
+  document.getElementById('sideNavBar').style.width ="0"
+
+}
 }
