@@ -1,4 +1,26 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<forum-message-container></forum-message-container>
 
-<router-outlet></router-outlet>
+
+<head>
+
+</head>
+
+<body class="bodyWrapper">
+  <div class="titleBar">
+    <span (click)="openNav()" class="glyphicon glyphicon-menu-hamburger"  class="hamburgerButton" aria-hidden="true">
+    </span><span class="pageTitle">HOME</span>
+  </div>
+
+  <div id="sideNavBar" class="sideNavBar">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="./channels">Channels</a>
+    <a href="./members-page">Members</a>
+    <a href="#">Other</a>
+  </div>
+
+
+  <!-- <channel-display></channel-display> -->
+  <router-outlet></router-outlet>
+</body>
+
+</html>
