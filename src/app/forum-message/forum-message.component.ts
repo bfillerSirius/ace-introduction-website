@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'forum-message',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./forum-message.component.scss']
 })
 export class ForumMessageComponent {
-  title = 'app';
+  @Input() message:any;
+
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'forum-message-container',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./forum-message-container.component.scss']
 })
 export class ForumMessageContainerComponent {
-  title = 'app';
+
+  @Input() open: any;
+  openForumModal(): void{
+    console.log("div opened")
+    this.open = true;
+  }
 }

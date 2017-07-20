@@ -1,0 +1,14 @@
+
+.forum-message-modal{
+  top: 40%;
+  left: 15%;
+  z-index: 1;
+  width: 70%;
+  height: 40%;
+  border: 2px solid green;
+  position: absolute;
+
+  .forum-message-modal-question-area{
+    resize: none;
+  }
+}
