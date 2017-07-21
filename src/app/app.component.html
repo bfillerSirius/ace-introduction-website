@@ -5,16 +5,17 @@
 </head>
 
 <body class="bodyWrapper">
-  <div class="titleBar">
-    <span (click)="openNav()" class="glyphicon glyphicon-menu-hamburger"  class="hamburgerButton" aria-hidden="true">
-    </span><span class="pageTitle">HOME</span>
-  </div>
+
+  <div class="hamburgerButton">
+  <i (click)="openNav()"class="fa fa-bars" aria-hidden="true"></i>
+</div>
+
 
   <div id="sideNavBar" class="sideNavBar">
     <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
     <a href="#">Home</a>
-    <a href="./channels">Channels</a>
-    <a href="./members-page">Members</a>
+    <a href="./profile-list">Our Team</a>
+    <a href="./forum">Forum</a>
     <a href="#">Other</a>
   </div>
   <router-outlet class="mainContentArea"></router-outlet>
