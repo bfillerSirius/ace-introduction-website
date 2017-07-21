@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'app';
 
   openNav(){
-  document.getElementById('sideNavBar').style.width ="45vw"
+  document.getElementById('sideNavBar').style.width ="180px"
 }
 closeNav(){
   document.getElementById('sideNavBar').style.width ="0"

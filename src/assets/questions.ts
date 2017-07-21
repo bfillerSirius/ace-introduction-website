@@ -1,4 +1,5 @@
-exports.QUESTIONS = [
+
+export const QUESTION:any[] = [
 
   {userID: 1, question: "How is life at Sirius?"},
   {userID: 2, question: "What does Sirius do?"},
