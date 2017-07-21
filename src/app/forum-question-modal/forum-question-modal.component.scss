@@ -1,25 +1,22 @@
 
-.forum-message-modal{
-  top: 30%;
-  left: 30%;
+.forum-question-modal{
+  top: 40%;
+  left: 15%;
   z-index: 1;
-  width: 40%;
+  width: 70%;
   height: 40%;
   border: 2px solid green;
   position: absolute;
   background: lightblue;
 
-  .forum-message-modal-content{
+  .forum-question-modal-content{
     height: 100%;
     width: 100%;
-    .forum-message-modal-response-area{
+    .forum-question-modal-question-area{
       resize: none;
       width: 80%;
       height: 50%;
       margin-left: 10%;
-    }
-    .modal-respone-button{
-      float: right;
     }
   }
 }
