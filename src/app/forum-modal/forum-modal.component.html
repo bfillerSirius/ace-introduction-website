@@ -1,8 +1,13 @@
-<div class="forum-message-modal">
+<div *ngIf="selectedUser" class="forum-message-modal">
   <div class="forum-message-modal-content">
-    <h3>Respond to user.</h3>
+    <h3>Respond to {{selectedUser}}:</h3>
     <br />
     <textarea class="forum-message-modal-response-area" placeholder="Enter response"></textarea>
+    <!--add values to array-->
     <button class="modal-response-button">SUBMIT</button>
+
   </div>
+
 </div>
+
+<div [ngClass]="{'grey-sheet':selectedUser}" (click)="remove()"></div>

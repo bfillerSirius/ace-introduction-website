@@ -10,6 +10,7 @@ import { ForumModalComponent } from './forum-modal/forum-modal.component';
 import { ProfileListComponent } from './profile-list/profile-list.component';
 import { HomeComponent } from './home/home.component';
 import { FullProfileComponent } from './full-profile/full-profile.component';
+import { ForumQuestionModalComponent } from './forum-question-modal/forum-question-modal.component'
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FullProfileComponent } from './full-profile/full-profile.component';
     ForumMessageComponent,
     ForumMessageContainerComponent,
     ForumModalComponent,
+    ForumQuestionModalComponent,
     ProfileListComponent,
     HomeComponent,
     FullProfileComponent

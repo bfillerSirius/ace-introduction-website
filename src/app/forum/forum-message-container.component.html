@@ -1,20 +1,12 @@
-<div>
-  <h1>Here is a display of all messages</h1>
-  <div>
-    <forum-message [message]="message"></forum-message>
-    <forum-message [message]="message"></forum-message>
-    <forum-message [message]="message"></forum-message>
-    <forum-message [message]="message"></forum-message>
-    <forum-message [message]="message"></forum-message>
-    <forum-message [message]="message"></forum-message>
-    <forum-message [message]="message"></forum-message>
-    <forum-message [message]="message"></forum-message>
-    <forum-message [message]="message"></forum-message>
-  </div>
-  <div>
-    <button (click)="openForumModal()">Add Post</button>
-    <div *ngIf="true" style="height: 500px; border: 2px solid orange;">
-      <forum-modal></forum-modal>
+
+  <div class="forum-container-header">
+    <div class="forum-container-header-text">
+      Ask Us Anything
     </div>
   </div>
-</div>
+  <!-- <div style="height: 50px; background-color: black;">
+    <h1>Ask Us Anything</h1>
+  </div> -->
+  <div>
+    <forum-message *ngFor="let question of QUESTIONS" [message]=question.question [user]=question.name [responses]=question.responses></forum-message>
+  </div>

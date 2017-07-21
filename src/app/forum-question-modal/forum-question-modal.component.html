@@ -1,8 +1,10 @@
-<div class="forum-message-modal">
-  <div class="forum-message-modal-content">
-    <h3>Respond to user.</h3>
+<div [ngClass] = "" class="forum-question-modal">
+  <div class="forum-question-modal-content">
+    <label>Name:</label>
+    <input type="text" placeholder="Name"/>
     <br />
-    <textarea class="forum-message-modal-question-area" placeholder="Enter response"></textarea>
-    <button>SUBMIT</button>
+    <label>Question:</label>
+    <textarea class="forum-question-modal-question-area" placeholder="Enter Question"></textarea>
+    <button class="modal-submit-button">SUBMIT</button>
   </div>
 </div>

@@ -1,9 +1,18 @@
-<html>
-  <head>
-  </head>
-  <body>
-    <div class="message-box" *ngIf="value">
-      Here is some stuff to go off of
+<div class="message-container">
+  <div class="message-box" *ngIf="message">
+     <b>{{user}}:</b> {{message}}
+    <div class="response-messages" *ngFor="let response of responses">
+      <div class="inner-response-text">
+        {{response}}
+      </div>
     </div>
-  </body>
-</html>
+  </div>
+  <a style="float: right" (click)="openReply(user)">Reply</a>
+  <hr />
+</div>
+
+<div *ngIf="displayModal">
+  <div>
+    <forum-modal [user]=user></forum-modal>
+  </div>
+</div>
