@@ -1,3 +1,5 @@
+$amber: #ffa000;
+
 .message-box{
   // border: 5px solid lightgray;
   height: 20%;
@@ -19,10 +21,10 @@
   height: 20%;
   // border: 1px dotted black;
   // border-top: 1px solid hotpink;
-  border-left: 1px solid hotpink;
+  border-left: 1px solid $amber;
   // border-bottom: 1px solid hotpink;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   margin-left: 35px;
 
   .inner-response-text{

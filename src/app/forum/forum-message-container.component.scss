@@ -1,14 +1,39 @@
+$circlebtnsize: 60px;
+
 .forum-container-header{
-   background-color: black;
+   background-color: #1a237e;
    height: 30vh;
    color: white;
    width: 100%;
    margin: auto;
-
 }
 
 .forum-container-header-text{
   text-align: center;
   padding: 120px;
   font-size: 3rem;
+}
+
+.forum-add-post-btn{
+  border-radius: 50%;
+  background-color: #ffa000;
+  color: white;
+  border: none;
+  height: $circlebtnsize;
+  width: $circlebtnsize;
+  padding-top: 10%;
+  font-size: 33px;
+}
+
+.forum-add-post-btn-div{
+  z-index: 5;
+  position: absolute;
+  margin: auto;
+  top: 25%;
+  left: 5%;
+
+}
+
+.forum-container{
+  padding-left: 10%;
 }
