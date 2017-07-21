@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ForumMessageComponent {
   @Input() message:any;
   @Input() user:any;
+  @Input() responses: any;
   private selectedUser: any;
   displayModal: boolean = false;
 

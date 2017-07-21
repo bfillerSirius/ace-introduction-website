@@ -1,16 +1,18 @@
 <div class="message-container">
   <div class="message-box" *ngIf="message">
-    {{message}}
+     <b>{{user}}:</b> {{message}}
+    <div class="response-messages" *ngFor="let response of responses">
+      <div class="inner-response-text">
+        {{response}}
+      </div>
+    </div>
   </div>
-  <button style="float: right" (click)="openReply(user)">Reply</button>
-  <div id = "ModalDisplay">something</div>
+  <a style="float: right" (click)="openReply(user)">Reply</a>
   <hr />
 </div>
 
 <div *ngIf="displayModal">
   <div>
-    there should be a value here after click
     <forum-modal [user]=user></forum-modal>
-
   </div>
 </div>
