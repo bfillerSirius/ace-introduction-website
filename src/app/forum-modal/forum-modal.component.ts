@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'forum-modal',
@@ -7,5 +7,21 @@ import { Component, Input } from '@angular/core';
 })
 export class ForumModalComponent {
   @Input() message:any;
+  @Input() user:any;
+  users: any[] = [];
+  private selectedUser: any;
+
+
+  ngOnInit() {
+    this.selectedUser = this.user;
+  }
+
+  onSelect(user: any): void{
+    this.selectedUser = user;
+  }
+
+  remove(){
+    this.selectedUser = null;
+  }
 
 }
