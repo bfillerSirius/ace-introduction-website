@@ -1,13 +1,8 @@
 
-$siriusBlue: #222C6A;
+$siriusBlue: #1a237e ;
 
 
-body{
-  max-width: 1500px;
-  width: 100%;
-  margin: auto;
-  font-family: 'Roboto', sans-serif;
-}
+
 
 .sideNavBar {
     height: 100%; /* 100% Full-height */
@@ -16,7 +11,7 @@ body{
     z-index: 10; /* Stay on top */
     top: 0;
     margin:auto;
-    background-color: $siriusBlue; /* SiriusBlue*/
+    background-color: white; /* SiriusBlue*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 10px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -48,7 +43,8 @@ body{
   font-size: 20px;
   z-index: 5;
   top: 0;
-  width: 100%;
+  padding-left: 40px;
+  padding-top: 30px;
 }
 
 .fa-bars{
