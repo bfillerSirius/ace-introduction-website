@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { Profile } from './profiles'
 // import { Employee } from './profiles';
 
 
@@ -10,6 +11,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FullProfileComponent implements OnInit {
 
+
+  // @Input() profile: Profile;
   constructor() { }
 
   ngOnInit() {
