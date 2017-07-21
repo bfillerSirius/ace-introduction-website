@@ -42,19 +42,17 @@ body{
     padding-top: 0;
 }
 .hamburgerButton{
-  position: relative;
+  position: absolute;
   background-color: transparent;
   height: 40px;
   font-size: 20px;
   z-index: 5;
   top: 0;
-  left: 0;
   width: 100%;
 }
 
 .fa-bars{
-  position: relative;
+  position: absolute;
+  margin: auto;
   color:white;
-  top: 5px;
-  left:5px;
 }
