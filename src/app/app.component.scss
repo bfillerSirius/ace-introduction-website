@@ -1,17 +1,22 @@
-html {
-  max-width: 1200px;
+body{
+  max-width: 1500px;
   width: 100%;
   margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
+.mainContentArea{
+  width: 70vw;
+  height: 800px;
+  z-index: 2;
 }
 
 .sideNavBar {
   height: 100vh;
   /* 100% Full-height */
-  width: 15vw;
+  width: 150px;
   /* 0 width - change this with JavaScript */
-  position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 2;
   /* Stay on top */
   top: 0;
   left: 0;
@@ -23,6 +28,7 @@ html {
   /* Place content 60px from the top */
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
+  margin: 0;
 }
 /* The navigation menu links */
 .titleBar{
@@ -46,10 +52,12 @@ html {
   font-size: 36px;
   margin-left: 50px;
   padding-top:2px;
+  display: none;
 }
 
+
+
 .hamburgerButton {
-  position: fixed;
   font-size: 20px;
   z-index: 1;
   top: 3px;
@@ -58,7 +66,8 @@ html {
 }
 
 .pageTitle {
-  position:fixed;
+  position: relative;
+  margin-left: 85vw;
   text-align: right;
   font-size: 2rem;
   top: 3px;
