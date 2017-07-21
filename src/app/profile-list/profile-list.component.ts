@@ -7,8 +7,10 @@ import {EMPLOYEES, DIRECTORS} from '../../assets/people'
   styleUrls: ['./profile-list.component.scss']
 })
 export class ProfileListComponent implements OnInit {
+
   myEmployees = EMPLOYEES;
   myDirectors =DIRECTORS;
+
   constructor() { }
 
   ngOnInit() {

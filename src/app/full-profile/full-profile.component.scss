@@ -5,6 +5,87 @@ $primary-text-color: black;
 $secondary-text-color: white;
 $tertiary-text-color: lightgray;
 
+@media (max-width: 600px) {   //phone
+  .full-profile-avatar {
+    width: 100px;
+    height: 100px;
+    margin-top: 140px;
+    margin-left: 50px;
+  }
+  .full-profile-topPane {
+    height: 200px;
+  }
+  .full-profile-basicInfo {
+    margin-left: 158px;
+    margin-top:-83px;
+  }
+  .full-profile-name{
+    font-size: 15px;
+  }
+  .full-profile-jobDescription {
+    font-size: 10px;
+  }
+  .full-profile-bioText {
+    font-size: 15px;
+    text-align: center;
+    color: $primary-text-color;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 70px;
+   border-bottom: solid 2px $secondary-color;
+ }
+ .full-profile-contactEmail {
+   font-size: 15px;
+   text-align: right;
+   color: $primary-text-color;
+   width: 90%;
+   float:right;
+   padding-bottom: 70px;
+   padding-left: 100px;
+   padding-right: 40px
+ }
+}
+
+@media (min-width: 992px) {
+  .full-profile-avatar {
+    width: 220px;
+    height: 220px;
+    margin-top: 360px;
+    margin-left: 130px;
+  }
+  .full-profile-topPane {
+    height: 500px;
+  }
+  .full-profile-basicInfo {
+    margin-left: 380px;
+    margin-top:-170px;
+  }
+  .full-profile-name{
+    font-size: 30px;
+  }
+  .full-profile-jobDescription {
+    font-size: 20px;
+  }
+  .full-profile-bioText {
+    font-size: 20px;
+    text-align: center;
+    color: $primary-text-color;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 70px;
+   border-bottom: solid 2px $secondary-color;
+ }
+ .full-profile-contactEmail {
+   font-size: 15px;
+   text-align: right;
+   color: $primary-text-color;
+   width: 50%;
+   float:right;
+   padding-bottom: 70px;
+   padding-right: 370px;
+ }
+}
+
 .full-profile-topPane {
   // background-color: $primary-color;
   // background-image: url('http://patricejobs.com/ccordeiro/files/2016/05/Houston_18.jpg');
@@ -12,23 +93,23 @@ $tertiary-text-color: lightgray;
   background-size: 100%;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
 
-  height: 500px;
+  // height: 500px;
   width: 100%;
   margin-bottom: -10px;
 
   .full-profile-basicInfo {
-    margin-left: 380px;
-    margin-top:-170px;
+    // margin-left: 380px;
+    // margin-top:-170px;
 
     .full-profile-name {
       color:$secondary-text-color;
       margin-bottom: -3px;
-      font-size: 30px;
+      // font-size: 30px;
 
     }
     .full-profile-jobDescription {
       color:$tertiary-text-color;
-      font-size: 20px;
+      // font-size: 20px;
     }
   }
 
@@ -41,35 +122,35 @@ $tertiary-text-color: lightgray;
 }
 
 .full-profile-avatar {
-  width: 220px;
-  height: 220px;
+  // width: 220px;
+  // height: 220px;
   border-radius: 50%;
-  margin-top: 360px;
-  margin-left: 130px;
+  // margin-top: 360px;
+  // margin-left: 130px;
 }
 
 .full-profile-bio {
   padding-top: 150px;
 
-.full-profile-bioText {
-  font-size: 20px;
-  text-align: center;
-  color: $primary-text-color;
-  width: 50%;
-  margin: auto;
-  padding-bottom: 70px;
- border-bottom: solid 2px $secondary-color;
+// .full-profile-bioText {
+//   font-size: 20px;
+//   text-align: center;
+//   color: $primary-text-color;
+//   width: 50%;
+//   margin: auto;
+//   padding-bottom: 70px;
+//  border-bottom: solid 2px $secondary-color;
 
-}
-.full-profile-contactEmail {
-  font-size: 15px;
-  text-align: right;
-  color: $primary-text-color;
-  width: 50%;
-  float:right;
-  padding-bottom: 70px;
-  padding-right: 370px;
-}
+//}
+// .full-profile-contactEmail {
+//   font-size: 15px;
+//   text-align: right;
+//   color: $primary-text-color;
+//   width: 50%;
+//   float:right;
+//   padding-bottom: 70px;
+//   padding-right: 370px;
+// }
 
 
 }
