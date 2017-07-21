@@ -6,7 +6,7 @@ import{ForumMessageContainerComponent} from './forum/forum-message-container.com
 import{FullProfileComponent} from './full-profile/full-profile.component';
 import{} from '';
 const routes: Routes = [
-{ path: '', redirectTo: '/home', pathMatch: 'full' },
+{ path: '', redirectTo: '/forum-message', pathMatch: 'full' },
 { path: 'profile-list', component:ProfileListComponent},
 {path: 'home', component:HomeComponent},
 {path: 'forum-message', component:ForumMessageContainerComponent},
