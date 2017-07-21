@@ -2,21 +2,26 @@
 .forum-question-modal{
   top: 40%;
   left: 15%;
-  z-index: 1;
-  width: 70%;
-  height: 40%;
+  z-index: 5;
+  width: 50%;
+  height: 30%;
   border: 2px solid green;
   position: absolute;
   background: lightblue;
 
   .forum-question-modal-content{
+    padding: 5%;
     height: 100%;
     width: 100%;
     .forum-question-modal-question-area{
       resize: none;
       width: 80%;
-      height: 50%;
+      height: 30%;
       margin-left: 10%;
+    }
+    .modal-submit-button{
+      float: right;
+      border-radius: 5px;
     }
   }
 }

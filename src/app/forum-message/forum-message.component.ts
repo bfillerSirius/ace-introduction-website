@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'forum-message',
@@ -7,5 +7,16 @@ import { Component, Input } from '@angular/core';
 })
 export class ForumMessageComponent {
   @Input() message:any;
+  @Input() user:any;
+  private selectedUser: any;
+  displayModal: boolean = false;
 
+  openReply(user: any) {
+    console.log("reply clicked for ", user)
+    this.selectedUser = user;
+    // open modal box
+
+    this.displayModal = true;
+
+  }
 }

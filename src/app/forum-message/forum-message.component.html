@@ -1,9 +1,16 @@
-<html>
-  <head>
-  </head>
-  <body>
-    <div class="message-box" *ngIf="value">
-      Here is some stuff to go off of
-    </div>
-  </body>
-</html>
+<div class="message-container">
+  <div class="message-box" *ngIf="message">
+    {{message}}
+  </div>
+  <button style="float: right" (click)="openReply(user)">Reply</button>
+  <div id = "ModalDisplay">something</div>
+  <hr />
+</div>
+
+<div *ngIf="displayModal">
+  <div>
+    there should be a value here after click
+    <forum-modal [user]=user></forum-modal>
+
+  </div>
+</div>

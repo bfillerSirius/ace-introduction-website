@@ -1,6 +1,16 @@
 .message-box{
   border: 5px solid lightgray;
   height: 20px;
-  width: 80%;
+  width: 100%;
   padding: 15px;
+}
+
+.message-container{
+  padding-left: 5%;
+  height: 40%;
+  width: 80%;
+}
+
+.message-reply{
+  float: right;
 }
