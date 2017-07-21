@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+// import { Employee } from './profiles';
+
+
 
 @Component({
   selector: 'app-full-profile',
