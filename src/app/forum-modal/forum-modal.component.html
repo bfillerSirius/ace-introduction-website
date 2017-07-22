@@ -1,13 +1,17 @@
 <div *ngIf="selectedUser" class="forum-message-modal">
+  <div>
+    <p style="float: left; font-size: 20px;">Respond to {{selectedUser}}:</p>
+    <button style="float: right;" (click)="remove()">x</button>
+  </div>
   <div class="forum-message-modal-content">
-    <h3>Respond to {{selectedUser}}:</h3>
+
     <br />
-    <textarea class="forum-message-modal-response-area" placeholder="Enter response"></textarea>
+    <textarea id="responseID" class="forum-message-modal-response-area" placeholder="Enter response"></textarea>
     <!--add values to array-->
-    <button class="modal-response-button">SUBMIT</button>
+    <button class="modal-response-button" (click)='addResponse()'>SUBMIT</button>
 
   </div>
 
 </div>
 
-<div [ngClass]="{'grey-sheet':selectedUser}" (click)="remove()"></div>
+<div [ngClass]="{'grey-sheet':selectedUser}"></div>

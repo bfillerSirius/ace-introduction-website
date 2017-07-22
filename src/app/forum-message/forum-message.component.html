@@ -4,6 +4,7 @@
     <div class="response-messages" *ngFor="let response of responses">
       <div class="inner-response-text">
         {{response}}
+        <!-- {{index}} -->
       </div>
     </div>
   </div>
@@ -13,6 +14,9 @@
 
 <div *ngIf="displayModal">
   <div>
-    <forum-modal [user]=user></forum-modal>
+    <forum-modal [user]=user [index]=index></forum-modal>
   </div>
 </div>
+
+
+<!-- <div [ngClass]="{'grey-sheet':displayModal}" (click)="remove()"></div> -->

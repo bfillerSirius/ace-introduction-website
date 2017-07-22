@@ -8,14 +8,19 @@
     <h1>Ask Us Anything</h1>
   </div> -->
   <div class="forum-add-post-btn-div">
-    <a class="btn btn-default forum-add-post-btn">+</a>
+    <a class="btn btn-default forum-add-post-btn" (click)="openQuestionCreation()">+</a>
   </div>
 
   <div class="forum-container">
     <div>
-      <forum-message *ngFor="let question of QUESTIONS" [message]=question.question [user]=question.name [responses]=question.responses></forum-message>
+      <forum-message *ngFor="let question of currentQuestions; let i = index" [message]=question.question [user]=question.name [responses]=question.responses [index]=i></forum-message>
     </div>
   </div>
+
+  <div>
+    <forum-question-modal [display]="displayModal" [questions]=currentQuestions></forum-question-modal>
+  </div>
+
 
   <!-- <div>
     <button (click)="openForumModal()">Add Post</button>
