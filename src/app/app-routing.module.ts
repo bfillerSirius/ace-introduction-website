@@ -10,7 +10,7 @@ const routes: Routes = [
 { path: 'profile-list', component:ProfileListComponent},
 {path: 'home', component:HomeComponent},
 {path: 'forum-message', component:ForumMessageContainerComponent},
-{path: 'full-profile', component:FullProfileComponent}
+{path: 'full-profile', component:FullProfileComponent},
 ];
 
 @NgModule({
