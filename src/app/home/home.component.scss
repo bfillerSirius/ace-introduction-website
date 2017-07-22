@@ -32,6 +32,7 @@ $siriusBlue: #1a237e ;
 
 .homeBottomPane{
   min-height: 55vh;
+  height:100%;
   width: 100%;
   font-size: 2.5rem;
   margin: auto;
@@ -47,9 +48,68 @@ $siriusBlue: #1a237e ;
     height: auto;
     width: 600px;
     text-align: left;
+    padding: 20px;
   }
   .homeParagraphBio{
     height: auto;
     width: 600px;
+    padding: 20px;
   }
+}
+
+@media only screen and (max-width: 700px) {
+  .homeTopPane {
+
+    .greetingsWrapper {
+
+
+      .homeGreeting {
+        font-size: 3.5rem;
+        border-bottom: solid 3px #FFa000;
+      }
+
+      .homeSubGreeting {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .homeTopPane {
+      height: 35vh;
+    .greetingsWrapper {
+
+
+      .homeGreeting {
+        height: 40px;
+        font-size: 2rem;
+        border-bottom: solid 3px #FFa000;
+      }
+
+      .homeSubGreeting {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .homeBottomPane{
+    min-height: 65vh;
+    font-size: 1.75rem;
+    padding-top: 3vh;
+    .bulletedSummary{
+      height: auto;
+      width: 600px;
+      text-align: left;
+      padding: 20px;
+    }
+    .homeParagraphBio{
+      height: auto;
+      width: 600px;
+      padding: 20px;
+    }
+  }
+
+
+
+
 }

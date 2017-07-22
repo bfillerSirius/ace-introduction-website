@@ -1,4 +1,3 @@
-
 <div class="profileListTopPane">
   <div class="profileListGreetingsWrapper">
 
@@ -10,8 +9,8 @@
 </div>
 
 <div class="profileListBottomPane">
-      <div class='profileListContainerTitle'>Directors</div>
-  <div class="directorListContainer">
+  <div class='profileListContainerTitle'>Directors</div>
+  <div class="personListContainer">
     <div *ngFor="let director of myDirectors" class="individualProfile">
       <div class="profileListAvatar">
         <img src="{{director.imgUrl}}" alt="profilePicture">
@@ -29,22 +28,24 @@
     </div>
 
 
-<div class="profileListContainerTitle">2017 Team</div>
-  <div class="employeeListContainer">
+    <div class="profileListContainerTitle">2017 Team</div>
+    <div class="personListContainer">
 
-    <div *ngFor="let employee of myEmployees" class="individualProfile">
-      <div class="profileListAvatar">
-        <img src="{{employee.imgUrl}}" alt="profilePicture">
-      </div>
-      <div class="profileTextDiv">
-
-
-        <div class="profileListName">
-          {{employee.name}}
+      <div *ngFor="let employee of myEmployees" class="individualProfile">
+        <div class="profileListAvatar">
+          <img src="{{employee.imgUrl}}" alt="profilePicture">
         </div>
-        <div class="profileListTitle">
-          {{employee.position}}
+        <div class="profileTextDiv">
+
+
+          <div class="profileListName">
+            {{employee.name}}
+          </div>
+          <div class="profileListTitle">
+            {{employee.position}}
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>
