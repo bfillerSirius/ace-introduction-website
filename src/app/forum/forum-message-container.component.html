@@ -7,6 +7,21 @@
   <!-- <div style="height: 50px; background-color: black;">
     <h1>Ask Us Anything</h1>
   </div> -->
-  <div>
-    <forum-message *ngFor="let question of QUESTIONS" [message]=question.question [user]=question.name [responses]=question.responses></forum-message>
+  <div class="forum-add-post-btn-div">
+    <a class="btn btn-default forum-add-post-btn">+</a>
   </div>
+
+  <div class="forum-container">
+    <div>
+      <forum-message *ngFor="let question of QUESTIONS" [message]=question.question [user]=question.name [responses]=question.responses></forum-message>
+    </div>
+  </div>
+
+  <!-- <div>
+    <button (click)="openForumModal()">Add Post</button>
+    <div *ngIf="true" style="height: 500px; border: 2px solid orange;">
+      This is the area for modal
+      <forum-modal></forum-modal>
+      <forum-question-modal></forum-question-modal>
+    </div>
+  </div> -->

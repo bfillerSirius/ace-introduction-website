@@ -30,69 +30,67 @@ $siriusBlue: #1a237e ;
   background-color: white;
   color: black;
   text-align: center;
-
-  .individualProfile {
-    width: 350px;
-    height: 100px;
-    margin: 5px;
-    background-color: grey;
-  }
+  border-left: solid 2px #ffa000;
+  border-right: solid 2px #ffa000;
+  border-bottom: solid 2px #ffa000;
 }
 
 .profileListContainerTitle {
   width: 100%;
-  font-size: 3rem;
+  font-size: 4rem;
   padding-top: 2vh;
 }
 
-.directorListContainer {
+.personListContainer {
   background-color: white;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 
   .individualProfile {
-    width: 400px;
+    width: 500px;
     height: 100px;
     margin: 25px;
     background-color: transparent;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
     padding-top: 15px;
     text-align: left;
     padding-left: 5px;
   }
 }
 
-.employeeListContainer {
-  background-color: white;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-
-  .individualProfile {
-    width: 400px;
-    height: 100px;
-    margin: 25px;
-    background-color: transparent;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding-top: 15px;
-  }
-}
-
 .profileListAvatar {
   img {
+    padding-right: 10px;
     border-radius: 50%;
   }
 }
 
 .profileTextDiv {
-  padding-top: 15px;
-  display: inline-block;
-  width: 200px;
-  text-align: left;
-  padding-left: 20px;
+//   display: inline-block;
+  font-size: 2.5rem;
+//   width: 400px;
+//   text-align: left;
+//   padding-left: 20px;
+}
+
+
+@media only screen and (max-width: 750px) {
+  .personListContainer {
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    .individualProfile {
+      width: 300px;
+      height: 200px;
+      padding-top: 15px;
+      text-align: center;
+      justify-content: center;
+      padding-left: 5px;
+    }
+  }
 }
