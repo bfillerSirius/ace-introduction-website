@@ -1,25 +1,24 @@
-
 <div class="profileListTopPane">
   <div class="profileListGreetingsWrapper">
 
-    <div class="profileGreeting">
+   <div class="profileGreeting">
       Our Team
     </div>
 
-  </div>
+ </div>
 </div>
 
 <div class="profileListBottomPane">
-      <div class='profileListContainerTitle'>Directors</div>
-  <div class="directorListContainer">
-    <div *ngFor="let director of myDirectors" class="individualProfile">
+  <div class='profileListContainerTitle'>Directors</div>
+  <div class="personListContainer">
+    <div (click) = onselect(director) *ngFor="let director of myDirectors" class="individualProfile">
       <div class="profileListAvatar">
         <img src="{{director.imgUrl}}" alt="profilePicture">
       </div>
       <div class="profileTextDiv">
 
 
-        <div class="profileListName">
+       <div class="profileListName">
           {{director.name}}
         </div>
         <div class="profileListTitle">
@@ -29,22 +28,24 @@
     </div>
 
 
-<div class="profileListContainerTitle">2017 Team</div>
-  <div class="employeeListContainer">
+   <div class="profileListContainerTitle">2017 Team</div>
+    <div class="personListContainer">
 
-    <div *ngFor="let employee of myEmployees" class="individualProfile">
-      <div class="profileListAvatar">
-        <img src="{{employee.imgUrl}}" alt="profilePicture">
-      </div>
-      <div class="profileTextDiv">
-
-
-        <div class="profileListName">
-          {{employee.name}}
+     <div (click) = onselectStudents(employee) *ngFor="let employee of myEmployees" class="individualProfile">
+        <div class="profileListAvatar">
+          <img src="{{employee.imgUrl}}" alt="profilePicture">
         </div>
-        <div class="profileListTitle">
-          {{employee.position}}
+        <div class="profileTextDiv">
+
+
+          <div class="profileListName">
+            {{employee.name}}
+          </div>
+          <div class="profileListTitle">
+            {{employee.position}}
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>

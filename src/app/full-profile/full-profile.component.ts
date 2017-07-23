@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-// import { Profile } from './profiles'
-// import { Employee } from './profiles';
+import {EMPLOYEES, DIRECTORS} from '../../assets/people';
+import { Router, RouterModule } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
+
+import 'rxjs/add/operator/switchMap';
+
+
 
 
 
@@ -10,12 +15,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./full-profile.component.scss']
 })
 export class FullProfileComponent implements OnInit {
+name;
+position;
+img;
+bio;
+email;
 
 
-  // @Input() profile: Profile;
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute) { }
 
-  ngOnInit() {
-  }
+  ngOnInit(): void{
+    this.activatedRoute.params.subscribe((params: Params) => {
+        this.name = params['name'];
+        this.position = params['position'];
+        this.img = params['largeImg'];
+        this.bio = params['bio'];
+        this.email = params['email'];
+      });
+   }
 
 }

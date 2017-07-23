@@ -1,7 +1,7 @@
 <div *ngIf="selectedUser" class="forum-message-modal">
   <div>
-    <p style="float: left; font-size: 20px;">Respond to {{selectedUser}}:</p>
-    <button style="float: right;" (click)="remove()">x</button>
+    <p class="forum-modal-header">Respond to {{selectedUser}}:</p>
+    <button class="modal-exit-btn" style="float: right;" (click)="remove()">x</button>
   </div>
   <div class="forum-message-modal-content">
 
@@ -14,4 +14,4 @@
 
 </div>
 
-<div [ngClass]="{'grey-sheet':selectedUser}"></div>
+<div [ngClass]="{'grey-sheet':selectedUser}" (click)="remove()"></div>

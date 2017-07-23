@@ -1,18 +1,38 @@
 $circlebtnsize: 60px;
+$amber: #ffa000;
 
 .forum-container-header{
-   background-color: #1a237e;
-   height: 30vh;
+   //background-color: #1a237e;
+   height: 40vh;
    color: white;
    width: 100%;
    margin: auto;
+   //padding-bottom: 35vh;
+   background: url("http://erictippetts.com/wp-content/uploads/2016/06/forum2-1.jpg");
+   background-size: 100%;
+   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.85);
 }
+
+@media only screen and (max-width: 500px) {
+  .forum-container-header{
+    margin-bottom: 10%;
+  }
+}
+
+
 
 .forum-container-header-text{
   text-align: center;
-  padding: 120px;
-  font-size: 3rem;
+  // height: 40%;
+  // padding: 80px;
+  width: 40%;
+  margin-left: 30%;
+  padding-top: 80px;
+  font-size: 5rem;
+  border-bottom: 3px solid $amber;
+
 }
+
 
 .forum-add-post-btn{
   border-radius: 50%;
@@ -26,10 +46,10 @@ $circlebtnsize: 60px;
 }
 
 .forum-add-post-btn-div{
-  z-index: 5;
+  z-index: 4;
   position: absolute;
   margin: auto;
-  top: 25%;
+  top: 34%;
   left: 5%;
 
 }
@@ -47,5 +67,22 @@ $circlebtnsize: 60px;
   width: 100%;
   height: 100%;
   opacity: 0.5;
-  z-index: 2;
+  z-index: 3;
+}
+
+
+@media only screen and (max-width: 875px){
+  .forum-container-header-text{
+    padding-top: 80px;
+    width: 213px;
+    font-size: 3rem;
+    margin: auto;
+  }
+}
+
+
+@media only screen and (max-height: 450px){
+  .forum-container-header-text{
+    padding-top: 60px;
+  }
 }

@@ -13,28 +13,44 @@ $siriusBlue: #1a237e ;
     margin:auto;
     background-color: white; /* SiriusBlue*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 10px; /* Place content 60px from the top */
+    padding-top: 0px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     // display: none;
+    .sideNavBarPicture {
+      width: 200px;
+      height: 250px;
+    }
+
 }
 
 /* The navigation menu links */
 .sideNavBar a {
     padding: 8px 8px 8px 8px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
     border:none;
+    text-align: center;
+border-bottom: solid 1px gray;
+   padding-bottom: 5px;
+   width: 110px;
+   margin-left: 30px;
 }
 
 .sideNavBar .closebtn {
     top: 0;
-    right: 5px;
+    right: 20px;
     font-size: 36px;
-    margin-left: 80%;
+    margin-left: 90%;
     padding-top: 0;
+    z-index: 3;
+    color: white;
+    position: absolute;
+    border-bottom: none;
+    width: 20px;
+    padding-right: 5px;
 }
 .hamburgerButton{
   position: absolute;

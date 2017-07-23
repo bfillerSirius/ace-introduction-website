@@ -23,9 +23,11 @@ export class ForumMessageComponent {
     console.log("reply clicked for ", user)
     this.selectedUser = user;
     // open modal box
-    this.displayModal = this.questionObj.getDisplay();
     this.questionObj.switchDisplay();
 
+    this.displayModal = this.questionObj.getDisplay();
+
+    console.log(this.displayModal, " bool from fm")
 
     // console.log(this.displayModal, "from fm when opened");
   }

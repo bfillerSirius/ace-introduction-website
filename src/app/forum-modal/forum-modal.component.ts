@@ -24,6 +24,7 @@ export class ForumModalComponent {
 
   remove(){
     this.selectedUser = null;
+    // this.questionsObj.switchDisplay();
   }
 
   addResponse(){
@@ -34,7 +35,7 @@ export class ForumModalComponent {
     this.newArray[this.index].responses.push(this.temp);
     this.questionsObj.setQuestions(this.newArray);
     this.remove();
-    // console.log(this.questionsObj.display, "from modal")
+    console.log(this.questionsObj.getDisplay(), "from modal")
   }
 
 }
