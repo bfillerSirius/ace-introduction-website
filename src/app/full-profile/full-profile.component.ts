@@ -20,6 +20,7 @@ position;
 img;
 bio;
 email;
+coverPhoto;
 
 
   constructor(private activatedRoute: ActivatedRoute) { }
@@ -31,6 +32,7 @@ email;
         this.img = params['largeImg'];
         this.bio = params['bio'];
         this.email = params['email'];
+        this.coverPhoto = params['coverPhoto'];
       });
    }
 
