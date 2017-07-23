@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import {QuestionsService} from '../services/questions.service';
 
 @Component({
   selector: 'forum-modal',
@@ -8,20 +9,33 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ForumModalComponent {
   @Input() message:any;
   @Input() user:any;
+  @Input() index: number;
   users: any[] = [];
   private selectedUser: any;
+  newArray: any[];
+  temp:any;
 
+  constructor(private questionsObj: QuestionsService) {}
 
   ngOnInit() {
     this.selectedUser = this.user;
   }
 
-  onSelect(user: any): void{
-    this.selectedUser = user;
-  }
 
   remove(){
     this.selectedUser = null;
+    // this.questionsObj.switchDisplay();
+  }
+
+  addResponse(){
+
+    this.newArray = this.questionsObj.getQuestions();
+
+    this.temp = (<HTMLInputElement>document.getElementById("responseID")).value;
+    this.newArray[this.index].responses.push(this.temp);
+    this.questionsObj.setQuestions(this.newArray);
+    this.remove();
+    console.log(this.questionsObj.getDisplay(), "from modal")
   }
 
 }

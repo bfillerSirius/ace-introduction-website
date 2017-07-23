@@ -1,10 +1,20 @@
-<div [ngClass] = "" class="forum-question-modal">
+<div *ngIf="display" class="forum-question-modal">
   <div class="forum-question-modal-content">
-    <label>Name:</label>
-    <input type="text" placeholder="Name"/>
+    <div class="name-label-input">
+      <div class="name-label">
+        <label>Name:</label>
+        <input id="nameID" class="forum-name-area" type="text" placeholder="Name"/>
+      </div>
+      <button class="modal-exit-btn" (click)="remove()">x</button>
+
+    </div>
     <br />
-    <label>Question:</label>
-    <textarea class="forum-question-modal-question-area" placeholder="Enter Question"></textarea>
-    <button class="modal-submit-button">SUBMIT</button>
+    <div class="forum-question-area">
+      <label class="question-label">Question:</label>
+      <textarea id="questionID" class="forum-question-modal-question-area" placeholder="Enter Question"></textarea>
+    </div>
+
+    <button class="modal-submit-button" (click)='addQuestion()'>SUBMIT</button>
   </div>
 </div>
+<div [ngClass]="{'grey-sheet':display}" (click)="remove()"></div>

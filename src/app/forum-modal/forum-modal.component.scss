@@ -10,27 +10,37 @@
   z-index: 2;
 }
 
+
 .forum-message-modal{
-  top: 40%;
-  left: 40%;
+  top: 30%;
+  left: 30%;
   z-index: 5;
   width: 30%;
   height: 40%;
-  border: 1px solid #1a237e;
+  border: .5px solid black;
   position: absolute;
   background: white;
 
+
+//#1a237e
   .forum-message-modal-content{
+    padding-right: 25px;
     height: 100%;
     width: 100%;
     margin-left: 2%;
+    padding-right: 15px;
+
+
     .forum-message-modal-response-area{
       resize: none;
       width: 90%;
       height: 50%;
       margin-left: 5%;
+
+      border-top: none;
+      border-left: 1px solid #ffa000;
+      border-bottom: 1px solid #ffa000;
       border-right: none;
-      border-bottom: none;
       background: #f2f3f4;
     }
     .forum-message-modal-response-area:focus{
@@ -43,6 +53,44 @@
       color: black;
       font-weight: bold;
       margin-right: 5%;
+      background-color: transparent;
+      border: none;
     }
   }
+  .modal-exit-btn{
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+  }
+
+  .forum-modal-header{
+    float: left;
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media only screen
+  and (max-device-width: 500px){
+
+    .forum-message-modal{
+      top: 10%;
+      left: 5%;
+      width: 90%;
+      height: 70%;
+      .forum-message-modal-content{
+        .forum-message-modal-response-area{
+          height: 80%;
+        }
+        .modal-response-button{
+          padding-bottom: 15px;
+        }
+      }
+    }
+    //
+    // .forum-message-modal-response-area{
+    //   height: 80%;
+    // }
 }

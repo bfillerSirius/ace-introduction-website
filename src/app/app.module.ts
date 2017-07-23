@@ -11,6 +11,7 @@ import { ProfileListComponent } from './profile-list/profile-list.component';
 import { HomeComponent } from './home/home.component';
 import { FullProfileComponent } from './full-profile/full-profile.component';
 import { ForumQuestionModalComponent } from './forum-question-modal/forum-question-modal.component'
+import { QuestionsService } from './services/questions.service'
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { ForumQuestionModalComponent } from './forum-question-modal/forum-questi
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [QuestionsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
