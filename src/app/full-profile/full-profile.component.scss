@@ -28,13 +28,13 @@ $tertiary-text-color: lightgray;
     margin-top:-103px;
   }
   .full-profile-name{
-    font-size: 25px;
+    font-size: 15px;
   }
   .full-profile-jobDescription {
     font-size: 15px;
   }
   .full-profile-bioText {
-    font-size: 15px;
+    font-size: 2.5rem;
     text-align: center;
     color: $primary-text-color;
     width: 80%;
@@ -55,7 +55,7 @@ $tertiary-text-color: lightgray;
  }
 }
 
-@media (min-width: 601px) and (max-width: 991px) { //tablet
+@media (min-width: 601px) and (max-width: 1023px) { //tablet
   .full-profile-topPane {
     .shadow {
 
@@ -65,36 +65,36 @@ $tertiary-text-color: lightgray;
     }
   }
   .full-profile-avatar {
-    width: 100px;
-    height: 100px;
-    margin-top: -5vh;
+    width: 180px;
+    height: 180px;
+    margin-top: -10vh;
     margin-left: 50px;
   }
   .full-profile-topPane {
     height: 300px;
   }
   .full-profile-basicInfo {
-    margin-left: 158px;
-    margin-top:-103px;
+    margin-left: 250px;
+    margin-top:-160px;
   }
   .full-profile-name{
     font-size: 25px;
   }
   .full-profile-jobDescription {
-    font-size: 15px;
+    font-size: 25px;
   }
   .full-profile-bioText {
-    font-size: 15px;
+    font-size: 2.5rem;
     text-align: center;
     color: $primary-text-color;
     width: 80%;
     margin: auto;
     padding-bottom: 40px;
    border-bottom: solid 2px $secondary-color;
-   margin-top: -80px;
+   margin-top: -25px;
  }
  .full-profile-contactEmail {
-   font-size: 13px;
+   font-size: 20px;
    text-align: right;
    color: $primary-text-color;
    width: 100%;
@@ -105,7 +105,59 @@ $tertiary-text-color: lightgray;
  }
 }
 
-@media (min-width: 992px) {    //desktop
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1354px) {  //ipad pro
+  .full-profile-topPane {
+    .shadow {
+
+        width: 100%;
+        height: 400px;
+
+    }
+  }
+  .full-profile-avatar {
+    width: 220px;
+    height: 220px;
+    margin-top: -100px;
+    margin-left: 130px;
+
+
+  }
+  .full-profile-topPane {
+    height: 400px;
+  }
+  .full-profile-basicInfo {
+    margin-left: 370px;
+    margin-top:-190px;
+  }
+  .full-profile-name{
+    font-size: 30px;
+  }
+  .full-profile-jobDescription {
+    font-size: 20px;
+  }
+  .full-profile-bioText {
+    font-size: 2.5rem;
+    text-align: center;
+    color: $primary-text-color;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 70px;
+   border-bottom: solid 2px $secondary-color;
+ }
+ .full-profile-contactEmail {
+   font-size: 20px;
+   text-align: right;
+   color: $primary-text-color;
+   width: 80%;
+   float:right;
+   padding-bottom: 70px;
+   padding-right: 300px;
+ }
+}
+
+@media (min-width: 1200px) {    //desktop
   .full-profile-topPane {
     .shadow {
 
@@ -118,7 +170,7 @@ $tertiary-text-color: lightgray;
   .full-profile-avatar {
     width: 220px;
     height: 220px;
-    margin-top: -13vh;
+    margin-top: -100px;
     margin-left: 130px;
 
 
@@ -137,7 +189,7 @@ $tertiary-text-color: lightgray;
     font-size: 20px;
   }
   .full-profile-bioText {
-    font-size: 20px;
+    font-size: 2.5rem;
     text-align: center;
     color: $primary-text-color;
     width: 50%;
@@ -146,13 +198,13 @@ $tertiary-text-color: lightgray;
    border-bottom: solid 2px $secondary-color;
  }
  .full-profile-contactEmail {
-   font-size: 15px;
+   font-size: 20px;
    text-align: right;
    color: $primary-text-color;
    width: 50%;
    float:right;
    padding-bottom: 70px;
-   padding-right: 370px;
+   padding-right: 300px;
  }
 }
 
@@ -212,6 +264,9 @@ $tertiary-text-color: lightgray;
   background-color: $tertiary-color;
   height: 900px;
   width: 100%;
+
+  border-left: solid 2px lightgray;
+  border-right: solid 2px lightgray;
 
 }
 
