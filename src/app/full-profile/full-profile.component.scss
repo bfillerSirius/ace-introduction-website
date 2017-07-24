@@ -157,7 +157,7 @@ and (max-device-width : 1354px) {  //ipad pro
  }
 }
 
-@media (min-width: 1200px) and (max-width: 1600){    //desktop
+@media (min-width: 1200px) {    //desktop
   .full-profile-topPane {
     .shadow {
 
@@ -170,7 +170,7 @@ and (max-device-width : 1354px) {  //ipad pro
   .full-profile-avatar {
     width: 220px;
     height: 220px;
-    margin-top: -10px;
+    margin-top: -100px;
     margin-left: 130px;
 
 
@@ -180,7 +180,7 @@ and (max-device-width : 1354px) {  //ipad pro
   }
   .full-profile-basicInfo {
     margin-left: 360px;
-    margin-top:-170px;
+    margin-top:-190px;
   }
   .full-profile-name{
     font-size: 30px;
