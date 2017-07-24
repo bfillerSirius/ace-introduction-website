@@ -98,6 +98,11 @@ $amber: #ffa000;
     top: 35%;
     left: 5%;
   }
+
+  .forum-container-header-text{
+    padding-top: 110px;
+  }
+
 }
 
 @media only screen and (min-width: 620px) and (max-width: 900px){
@@ -108,6 +113,10 @@ $amber: #ffa000;
     top: 37%;
     left: 5%;
   }
+
+  .forum-container-header-text{
+    padding-top: 160px;
+  }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1400px){//tablet but really ipad pro because its a bastard
@@ -117,6 +126,10 @@ $amber: #ffa000;
   .forum-add-post-btn-div{
     top: 37%;
     left: 10%;
+  }
+
+  .forum-container-header-text{
+    padding-top: 200px;
   }
 }
 
@@ -129,5 +142,9 @@ $amber: #ffa000;
   .forum-add-post-btn-div{
     top: 37%;
     left: 15%;
+  }
+
+  .forum-container-header-text{
+    padding-top: 180px;
   }
 }
