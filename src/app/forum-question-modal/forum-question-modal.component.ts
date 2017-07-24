@@ -26,7 +26,7 @@ export class ForumQuestionModalComponent {
   addQuestion(){
     this.display = true;
     this.temp = {questionID: 1, name: (<HTMLInputElement>document.getElementById("nameID")).value, userID: "2", question: (<HTMLInputElement>document.getElementById("questionID")).value, responses: []};
-    this.questions.push(this.temp);
+    this.questions.unshift(this.temp);
     this.questionsObj.setQuestions(this.questions);
     this.remove();
   }

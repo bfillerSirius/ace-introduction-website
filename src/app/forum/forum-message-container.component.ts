@@ -38,6 +38,7 @@ export class ForumMessageContainerComponent implements OnInit{
 
   ngOnInit() {
     this.currentQuestions = this.questionObj.getQuestions();
+    console.log("initialized")
     // this.currentQuestions = QUESTIONS;
     // console.log(this.currentQuestions[6], "val after add");
     // console.log(ForumQuestions.getQuestions(), "forum object")
