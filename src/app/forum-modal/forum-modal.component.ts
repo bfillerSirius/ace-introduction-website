@@ -24,7 +24,7 @@ export class ForumModalComponent {
 
   remove(){
     this.selectedUser = null;
-    // this.questionsObj.switchDisplay();
+    this.questionsObj.switchDisplay();
   }
 
   addResponse(){
