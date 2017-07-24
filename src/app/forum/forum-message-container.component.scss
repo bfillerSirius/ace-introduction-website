@@ -49,9 +49,10 @@ $amber: #ffa000;
   z-index: 4;
   position: absolute;
   margin: auto;
-  top: 34%;
-  left: 5%;
-
+  // top: 34%;
+  // left: 5%;
+  top: 37%;
+  left: 15%;
 }
 
 .forum-container{
@@ -84,5 +85,49 @@ $amber: #ffa000;
 @media only screen and (max-height: 450px){
   .forum-container-header-text{
     padding-top: 60px;
+  }
+
+  // .forum-add-post-btn-div{
+  //   top: 36%;
+  //   left: 5%;
+  // }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px){ //phones
+  .forum-add-post-btn-div{
+    top: 35%;
+    left: 5%;
+  }
+}
+
+@media only screen and (min-width: 620px) and (max-width: 900px){
+  .forum-container{
+    font-size: 20px;
+  }
+  .forum-add-post-btn-div{
+    top: 37%;
+    left: 5%;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px){//tablet but really ipad pro because its a bastard
+  .forum-container{
+    font-size: 30px;
+  }
+  .forum-add-post-btn-div{
+    top: 37%;
+    left: 10%;
+  }
+}
+
+
+@media only screen and (min-width: 1600px) and (max-width: 2000px){
+
+  .forum-container{
+    font-size: 30px;
+  }
+  .forum-add-post-btn-div{
+    top: 37%;
+    left: 15%;
   }
 }
