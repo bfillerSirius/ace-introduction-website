@@ -41,12 +41,13 @@ $amber: #ffa000;
     }
 
     .modal-exit-btn{
-      font-size: 2rem;
+      font-size: 3rem;
       background-color: transparent;
       border: none;
       position:absolute;
       top: 0;
-      right: 0;
+      right: 3%;
+
     }
   }
 
@@ -58,6 +59,8 @@ $amber: #ffa000;
     .forum-question-area{
       margin-top: 20px;
       height: 80%;
+      padding-bottom: 10%;
+
       .question-label{
         float: left;
         padding-right: 10px;
@@ -83,7 +86,7 @@ $amber: #ffa000;
       border: none;
       position: absolute;
       top: 90%;
-      right: 0;
+      right: 10%;
     }
   }
 }

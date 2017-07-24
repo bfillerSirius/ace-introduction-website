@@ -58,9 +58,11 @@
     }
   }
   .modal-exit-btn{
-    font-size: 2rem;
+    font-size: 3rem;
     background-color: transparent;
     border: none;
+    padding-right: 5%;
+    float: right;
   }
 
   .forum-modal-header{
@@ -144,6 +146,20 @@
 
 
 @media only screen and (min-width: 1600px) and (max-width: 2000px){
+  .forum-message-modal{
+    font-size: 30px;
 
+      .forum-modal-header{
+        font-size: 30px;
+        width: 50%;
+        text-align: left;
+        margin-left: 25px;
+      }
+      .forum-message-modal-content{
+        .forum-message-modal-response-area{
+          height: 60%;
+        }
+      }
+  }
 
 }
